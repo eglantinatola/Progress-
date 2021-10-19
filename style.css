@@ -1,0 +1,372 @@
+{box-sizing: border-box;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  height: 50px;
+
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav-left {
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.topnav-center {
+  float: none;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 25px;
+
+  color:white;
+  font-family:Poppins;
+  font-style:normal;
+  font-weight: normal;
+  font-size:16px;
+  line-height:36px;
+
+}
+
+.topnav-right{
+  float:right;
+  margin-right: 65px;
+  margin-top:10px ;
+  padding: 1px 32px;
+}
+
+
+ button{
+   background-color:skyblue;
+   color:white;
+ }
+
+ body {
+  background-color:rgb(228, 222, 222);
+  color:white;
+} 
+
+.bothcontainers{
+
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 200px ;
+  overflow: auto;
+  
+}
+  
+#id1 {
+  color:black;
+  font-family:Poppins;
+  font-style:normal;
+  font-weight: normal;
+  font-size:24px;
+  line-height:36px;
+
+}
+#id2 {
+  color:black;
+  font-family:Poppins;
+  font-style:normal;
+  font-weight: normal;
+  font-size:18px;
+  line-height:27px;
+  margin-top :10px;
+}
+#admin{
+  color:white;
+  font-family:Poppins;
+  font-style:normal;
+  font-weight:600;
+  font-size:24px;
+  line-height:36px;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.containerone{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: flex-end;
+
+ }
+
+.itemright,#id2{
+  float:right;
+  margin-right: 20px;
+
+}
+.itemright,#id1{
+  float:left;
+  
+}
+#id1{
+  margin-left: 20px;
+}
+
+#image{
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.itemleft{
+  height: 110px;
+  margin-bottom:30px; 
+  background-color: rgb(207, 112, 80);
+  width: 300px;
+  text-align: right;
+
+}
+
+.itemleftt{
+  height: 700px;
+  margin-bottom:30px;
+  background-color: rgb(158, 155, 155);
+  width:300px;
+  font-family:Poppins;
+  font-style:normal;
+  font-weight: normal;
+  font-size:15px;
+  line-height:31px;
+  }
+
+.itemleftt,#image {
+  float: left;
+}
+
+.containertwo{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  align-items: center; 
+  
+ }
+
+.itemright{
+  height: 110px;
+  width: 800px;
+   margin-bottom:30px;  
+  background-color:white;
+  }
+
+.itemcontent{
+    height: 300px;
+    margin-bottom:30px; 
+    background-color:rgb(228, 222, 222);
+    width: 800px;
+    color:black;
+    align-content:center;
+    margin-top: 0px;
+  
+  }
+
+.itemrightt{
+ height: 400px;
+ width: 800px;
+ margin-bottom:0px;  
+ background-color: white;
+  }
+
+  #content{
+    margin-left: 0px;;
+  }
+
+  
+/* 
+.forms{
+  margin-left: 60px;
+} */
+
+.redcolor{
+color:rgb(197, 37, 37);
+
+}
+ 
+
+.rectangle {
+  height: 100px;
+  width: 10px;
+  background-color:orange;
+  padding: 10px;
+  border-radius: 25px;
+  display: inline-block;
+  margin-left: 40px;
+  
+  
+}
+  
+  
+.rectangle2{
+  height: 190px;
+  width: 10px;
+  background-color:green;
+  padding: 10px;
+  border-radius: 25px;
+  display: inline-block;
+  
+}
+  
+.rectangle3{
+  height: 10px;
+  width: 3px;
+  background-color:red;
+  padding: 10px;
+  border-radius: 25px;
+  display: inline-block;
+  
+}
+
+.vl {
+  border-left: 1px solid grey;
+  height: 220px;
+  margin-left: 2px;
+  display:-webkit-inline-box;
+  
+}
+.rectangleContainer {
+  width: 30%;
+  float: left;
+  margin-left: 60px;
+  
+}
+.cellContainer {
+  width: 25%;
+  float: left;
+  display: inline-block;
+  font-family:Poppins;
+  font-style:normal;
+  font-weight: 300;
+  font: size 18px;
+  line-height:27px;
+
+}
+ .threerectangles{
+  display:inline-block;
+  
+} 
+
+
+.solid{
+  border-top: 2px solid #bbb;
+  color:rgb(34, 33, 33);
+  }
+
+
+
+
+
+
+/* #primary is for the main content area and #secondary is for the sidebar
+Media Queries: Tablet Landscape */
+
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
+
+/* This ensures that the images will never be bigger than their parent container */
+img { max-width: 100%; height: auto; }
+
+/* On screens that are 992px or less,the background-color woll be skyblue*/
+@media screen and (max-width: 992px) {
+  body {
+    background-color: skyblue;
+  }
+}
+
+/* On screens that are 600px or less,the background-color will be olive;*/
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+}
+
+/* On screens that are 600px wide or less, make the topnav bar content on top of each-other instead of next to each0 other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav button {
+    display: none;
+  }
+}
+
+/* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+@media screen and (min-width: 600px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+/* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+
+ /* This will only apply when the browser window is wider than its height, in a Landscape Orientation */
+
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color:rgb(228, 222, 222);
+  }
+
+ /* When the browser's width is between 600 and 900px, change the appearance of the element with id="admin" */
+
+
+@media screen and (max-width:900px) and (min-width: 600px) {
+  #admin {
+    font-size: 20px;
+    padding: 12px;
+   
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+    
