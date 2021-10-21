@@ -53,7 +53,7 @@ button{
   font-weight: normal;
   font-size:18px;
   line-height:27px;
-  margin-top :10px;
+  margin-top :28px; 
 }
 
 #admin{
@@ -64,7 +64,7 @@ button{
   font-size:24px;
   line-height:36px;
   text-align: center; 
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
 .containerOne{
@@ -95,10 +95,13 @@ button{
  #remove{
    width:min-content;
    height:min-content;
- } 
+   
+
+ }  
 
  h2{ 
-  margin-top:-35px;
+  margin-top:-35px; 
+ 
    text-align: center;
  }
 
@@ -106,10 +109,10 @@ button{
 .firstItemLeft{
   display: flex;
   flex-direction:row;
-  align-content: center;
+  align-content:center;
   justify-content: space-between;
   height: 110px;
-  margin-bottom:30px;  
+  margin-bottom:30px;   
   background-color: rgb(207, 112, 80);
   width: 300px;
  
@@ -137,15 +140,19 @@ button{
 
 
 .firstItemRight{
-  display: flex;
-  flex-direction: row;
-  height: 110px;
-  width: 800px;
-  margin-bottom:30px;  
-  background-color:white;
-  justify-content: space-between;
 
+  display: inline-flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  height: 110px;
+  margin-bottom:30px;
+  background-color:white;
+  width: 800px;
   }
+
+
+ 
 
 
   .rightItemContent{
@@ -169,8 +176,12 @@ button{
 
  
  .redcolor{
- color:rgb(197, 37, 37);
+  color:red;
+  margin-left: 30px; 
 
+  }
+  span{
+    color:red
   }
 
 
@@ -205,36 +216,39 @@ button{
 .verticalLine {
   border-left: 1px solid grey;
   height: 220px;
-  margin-left: 2px;
+  margin-left: -40px;
+  margin-top: 18px;
   display:-webkit-inline-box;
   
 }
 .rectangleContainer {
-  width: 30%;
-  float: left;
+  width: 70%;
   margin-left: 60px;
+  
   
 }
 .cellContainer {
-  width: 25%;
-  float: left;
-  display: inline-block;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
   font-family:Poppins;
   font-style:normal;
   font-weight: 300;
-  font: size 18px;
-  line-height:27px;
-
+  font-size:18px;
+  line-height: 27px;
+  margin-left: -60px;  
  }
 
  .threeRectangles{
+  display: flex;
   display:inline-block; 
-  justify-content: space-between;
+  justify-content:space-around;
 } 
 
 .solid{
   border-top: 2px solid #bbb;
   color:rgb(34, 33, 33);
+  margin-left: -40px;
   }
 
 
@@ -250,7 +264,7 @@ img { max-width: 100%; height: auto; }
   }
 
     body {
-    background-color: olive;
+    background-color: rgb(226, 226, 169);
   }
 
   #admin {
@@ -260,6 +274,77 @@ img { max-width: 100%; height: auto; }
 }
   .secondItemLeft{
    font-size:12px ;
+}
+
+containerOne{
+  
+}
+
+.containerTwo{
+  align-self: center;
+}
+
+.firstItemLeft{
+  height: 70px;
+}
+
+#remove{
+  width: 22px;
+  height:22px;
+}
+
+.secondItemLeft{
+  height: 270px; 
+}
+
+.firstItemRight{
+  height: 70px;
+  justify-content;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content:left;
+  width: 400px;
+ 
+  
+  
+  
+  font-size: 5px;
+  background-color: rgb(235, 235, 199);
+
+}
+
+.bothContainers{
+
+  margin-top: 40px;
+  margin-left:40px ;
+
+
+}
+.rightItemContent{
+
+  display: flex;
+    flex-direction:row;
+    height: 300px;
+    margin-bottom:30px; 
+    background-color:rgb(228, 222, 222);
+    width: 800px;
+    color:black;  
+    justify-content:left; 
+    width:400px;
+
+
+}
+
+.containerTwo{
+ display: flex;
+ flex-direction: column;
+ align-items: stretch;
+ 
+
+}
+
+.thirdRightItem{
+  display:none;
 }
     
  }
